@@ -16,6 +16,7 @@ for (i in 3:9){
   subdf[,i] <-as.numeric(as.character(subdf[,i])) # convert into float for plotting
 }
 
+# plot the figure now
 png("plot2.png",width=480,height=480,units="px",bg = "transparent")
 plot(subdf$datetime,subdf$Global_active_power,type="l",
      xlab="",ylab="Global Active Power (kilowatts)")

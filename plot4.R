@@ -1,8 +1,5 @@
-#axis.POSIXct(1,subdf$datetime, at = seq(subdf$datetime[1],subdf$datetime[2880], by="day"),
-#             format="%a")
-
 # this is an R script for Coursera course "Exploratory Data Analysis"
-# it produces plot3.png required by Course Project 1
+# it produces plot4.png required by Course Project 1
 
 # load necessary package
 library(lubridate) # for dates
@@ -19,7 +16,7 @@ for (i in 3:9){
   subdf[,i] <-as.numeric(as.character(subdf[,i])) # convert into float for plotting
 }
 
-
+# plot the figure now
 png("plot4.png",width=480,height=480,units="px",bg = "transparent")
 par(mfrow=c(2,2))
 # top left
